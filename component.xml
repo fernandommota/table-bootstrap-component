@@ -1,0 +1,68 @@
+<DesignerComponent>
+	<Header>
+		<Name>Table Bootstrap Component</Name>
+		<IName>TableBootstrap</IName>
+		<Description>table Bootstrap layout Component</Description>
+		<Category>BOOTSTRAPCOMPONENTS</Category>
+		<CatDescription>Bootstrap</CatDescription>
+		<Type>PalleteEntry</Type>
+		<Version>1.0</Version>
+	</Header>
+	<Contents>
+		<Model>
+			<Property>htmlObject</Property>
+			<Property>listeners</Property>
+			<Property name="parameters">xActionArrayParameter</Property>
+			<Definition name="chartDefinition">
+				<Property>dataSource</Property>
+				<Property name="clickAction">cccClickAction</Property>
+				<Property name="colHeaders">colHeaders</Property>
+				<Property name="colTypes">colTypes</Property>
+				<Property name="colFormats">colFormats</Property>
+				<Property name="colWidths">colWidths</Property>
+				<Property name="colSortable">colSortable</Property>
+				<Property name="colSearchable">colSearchable</Property>
+				<Property name="paginate">paginate</Property>
+				<Property>paginateServerside</Property>
+				<Property name="paginationType">paginationType</Property>
+				<Property name="filter">filter</Property>
+				<Property name="info">info</Property>
+				<Property name="sort">sort</Property>
+				<Property name="sortBy">sortBy</Property>
+				<Property name="displayLength">displayLength</Property>
+				<Property name="lengthChange">lengthChange</Property>
+				<Property name="tableStyle">tableStyle</Property>
+				<Property>drawCallback</Property>
+				<Property name="sDom">sDom</Property>
+				<Property name="oLanguage">oLanguage</Property>
+			</Definition>
+			<Property>executeAtStart</Property>
+			<Property>preChange</Property>
+			<Property>postChange</Property>
+			<Property>postFetch</Property>
+			<Property>preExecution</Property>
+			<Property>postExecution</Property>
+			<Property>refreshPeriod</Property>
+			<Property>tooltip</Property>
+			<Property>extraOptions</Property>
+			<Property>expandParameters</Property>
+			<Property>expandOnClick</Property>
+			<Property>expandContainerObject</Property>			
+		</Model>
+		<Implementation>
+            <Code src="tableBootstrap.js" />            
+            <Styles>
+	        	<Style version="3" src="dataTables.bootstrap.css">Bootstrap Datatable</Style>
+	        	<Style version="1.1.0" src="dataTables.colVis.css">Bootstrap Colvis</Style>
+	        	<Style version="1.1.4" src="TableTools/css/TableTools.css">TableTools TableTools</Style>
+	      	</Styles>
+            <Dependencies>
+		    	<Dependency src="dataTables.colVis.js" version="1.1.0">Datatable Exclude Columns</Dependency>
+		    	<Dependency src="TableTools/ZeroClipboard.js" version="1.1.4">Datatable ZeroClipboard</Dependency>
+		    	<Dependency src="TableTools/TableTools.js" version="1.1.4">Datatable TableTools</Dependency>		    	
+		    </Dependencies>
+            <CustomProperties>
+            </CustomProperties>
+        </Implementation>
+	</Contents>
+</DesignerComponent>
