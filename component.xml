@@ -50,14 +50,14 @@
 			<Property>expandContainerObject</Property>			
 		</Model>
 		<Implementation>
-            <Code src="tableBootstrap.js" />            
+            <Code src="js/tableBootstrap.js" />            
             <Styles>
-	        	<Style version="3" src="dataTables.bootstrap.css">Bootstrap Datatable</Style>
-	        	<Style version="1.1.0" src="dataTables.colVis.css">Bootstrap Colvis</Style>
+	        	<Style version="3" src="css/dataTables.bootstrap.css">Bootstrap Datatable</Style>
+	        	<Style version="1.1.0" src="ColVis/dataTables.colVis.css">Bootstrap Colvis</Style>
 	        	<Style version="1.1.4" src="TableTools/css/TableTools.css">TableTools TableTools</Style>
 	      	</Styles>
             <Dependencies>
-		    	<Dependency src="dataTables.colVis.js" version="1.1.0">Datatable Exclude Columns</Dependency>
+		    	<Dependency src="ColVis/dataTables.colVis.js" version="1.1.0">Datatable Exclude Columns</Dependency>
 		    	<Dependency src="TableTools/ZeroClipboard.js" version="1.1.4">Datatable ZeroClipboard</Dependency>
 		    	<Dependency src="TableTools/TableTools.js" version="1.1.4">Datatable TableTools</Dependency>		    	
 		    </Dependencies>

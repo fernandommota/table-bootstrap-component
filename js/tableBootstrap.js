@@ -295,6 +295,7 @@ var TableBootstrap = UnmanagedComponent.extend({
   },
 
   processTableComponentResponse : function(json) {
+
     var myself = this,
         cd = this.chartDefinition,
         extraOptions = {};
@@ -309,14 +310,16 @@ var TableBootstrap = UnmanagedComponent.extend({
       cd.colTypes = json.metadata.map(function(i){return i.colType.toLowerCase()});
 
     var dtData0 = TableBootstrap.getDataTableOptions(cd);
-    console.log(cd);
-    console.log(dtData0);
+
     // Build a default config from the standard options
     $.each(this.extraOptions ? this.extraOptions : {}, function(i,e){
       extraOptions[e[0]] = e[1];
     });
-    var dtData = $.extend(cd.dataTableOptions,dtData0,extraOptions);
 
+    //console.log(dtData0);
+    //console.log(extraOptions);
+
+    var dtData = $.extend(cd.dataTableOptions,dtData0,extraOptions);
 
     /* Configure the table event handlers */
     dtData.fnDrawCallback = _.bind(this.fnDrawCallback,this);
@@ -343,8 +346,14 @@ var TableBootstrap = UnmanagedComponent.extend({
      */
     this.dataTable = $("#"+this.htmlObject+'Table').dataTable(dtData);
 
+        //set the default class 
+    $('#'+this.htmlObject).addClass('form-inline table-responsive');
+    // modify table search input
+    $('div.dataTables_filter input').addClass("form-control input-sm center-block"); 
+    // modify table length select
+    $('div.dataTables_length select').addClass("form-control input-sm"); 
 
-    console.log(dtData);
+
     // We'll create an Array to keep track of the open expandable rows.
     this.dataTable.anOpen = [];
 

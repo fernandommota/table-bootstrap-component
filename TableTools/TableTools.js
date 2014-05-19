@@ -37,7 +37,7 @@ var TableToolsInit = {
 	"sPrintInfo": "<h6>Print view</h6><p>Please use your browser's print function to "+
 		"print this table. Press escape when finished.", /* The 'fading' message */
 	"sTitle": "",
-	"sSwfPath": "/pentaho/api/repos/pentaho-cdf-dd/resources/custom/components/tableBooststrap/TableTools/media/swf/ZeroClipboard.swf",
+	"sSwfPath": "/pentaho/api/repos/pentaho-cdf-dd/resources/custom/components/table-bootstrap-component/TableTools/media/swf/ZeroClipboard.swf",
 	"iButtonHeight": 30,
 	"iButtonWidth": 30,
 	"sCsvBoundary": "'",
