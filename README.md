@@ -1,7 +1,9 @@
 table-bootstrap-component
 =========================
 
-A component for CDE tool that render a table with Colvis option and table tools option
+A component for CDE tool that render a table with Colvis option and table tools option.
+
+![alt tag](https://raw.githubusercontent.com/fernandommota/table-bootstrap-component/master/images/screen.png)
 
 
 * Installation 
