@@ -3,12 +3,11 @@ table-bootstrap-component
 
 A component for CDE tool that render a table with Colvis option and table tools option.
 
-* Screen 
+## Screen 
 
-![alt tag](https://raw.githubusercontent.com/fernandommota/table-bootstrap-component/master/images/screen.png)
+<img src="https://raw.githubusercontent.com/fernandommota/table-bootstrap-component/master/images/screen.png" alt="Example of table-bootstrap-component" title="Table Bootstrap Component" align="center" height="400"/>
 
-
-* Installation 
+## Installation 
 
  - Download and extract the zip file on this path:
  
@@ -17,7 +16,7 @@ A component for CDE tool that render a table with Colvis option and table tools 
  - Restart your server!
 
 
-* Translation 
+## Translation 
 ```JavaScript
 //Insert the code below in preExecution propertie of component
  function pre(){
@@ -42,10 +41,13 @@ A component for CDE tool that render a table with Colvis option and table tools 
  	};
  }
 ```
-* Fonts
+## Fonts
 
  - https://datatables.net/manual/styling/bootstrap
 
  - https://datatables.net/release-datatables/extensions/ColVis/examples/exclude_columns.html
 
  - http://datatables.net/extensions/tabletools/
+
+## Licence 
+ 
