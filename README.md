@@ -49,5 +49,4 @@ A component for CDE tool that render a table with Colvis option and table tools 
 
  - http://datatables.net/extensions/tabletools/
 
-## Licence 
  
