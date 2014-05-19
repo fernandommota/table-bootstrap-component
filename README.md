@@ -14,6 +14,9 @@ A component for CDE tool that render a table with Colvis option and table tools 
         *biserver-ce\pentaho-solutions\system\pentaho-cdf-dd\resources\custom\components\*
  
  - Restart your server!
+ 
+ - Change the default value 'New' for 'classic' in Style propertie of component. 
+ 
 
 
 ## Translation 
