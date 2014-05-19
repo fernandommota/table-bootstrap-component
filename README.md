@@ -17,6 +17,9 @@ A component for CDE tool that render a table with Colvis option and table tools 
 
 
 ## Translation 
+
+* Example Portuguese-Brazilian 
+
 ```JavaScript
 //Insert the code below in preExecution propertie of component
  function pre(){
