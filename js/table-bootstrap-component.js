@@ -465,8 +465,10 @@ var TableBootstrap = UnmanagedComponent.extend({
     dtData.bSort = options.sort;
     dtData.bFilter = options.filter;
     dtData.sPaginationType = options.paginationType;
-    dtData.sDom = options.sDom;
     dtData.aaSorting = options.sortBy;
+     
+    //sDom configurations, need for booststrap layout    
+    dtData.sDom = "CT<'clear'>lfrtip<'row'<'col-xs-6'><'col-xs-6'>><'row'<'col-xs-6'><'col-xs-6'>>";
     
     if (typeof options.oLanguage == "string"){
       dtData.oLanguage = eval("(" + options.oLanguage + ")");//TODO: er...

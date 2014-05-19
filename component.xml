@@ -50,7 +50,7 @@
 			<Property>expandContainerObject</Property>			
 		</Model>
 		<Implementation>
-            <Code src="js/tableBootstrap.js" />            
+            <Code src="js/table-bootstrap-component.js" />            
             <Styles>
 	        	<Style version="3" src="css/dataTables.bootstrap.css">Bootstrap Datatable</Style>
 	        	<Style version="1.1.0" src="ColVis/dataTables.colVis.css">Bootstrap Colvis</Style>
