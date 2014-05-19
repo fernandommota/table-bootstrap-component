@@ -3,6 +3,8 @@ table-bootstrap-component
 
 A component for CDE tool that render a table with Colvis option and table tools option.
 
+* Screen 
+
 ![alt tag](https://raw.githubusercontent.com/fernandommota/table-bootstrap-component/master/images/screen.png)
 
 
@@ -14,6 +16,32 @@ A component for CDE tool that render a table with Colvis option and table tools 
  
  - Restart your server!
 
+
+* Translation 
+```JavaScript
+//Insert the code below in preExecution propertie of component
+ function pre(){
+     this.chartDefinition.oColVis={"buttonText": "Exibir / Esconder Colunas"};
+   
+ 	this.chartDefinition.oLanguage = {
+ 		"sProcessing": "Processando...",
+ 		"sLengthMenu": "Mostrar _MENU_", 
+ 		"sZeroRecords": "Não foram encontrados resultados",
+ 		"sInfo": "Mostrando de _START_ a _END_ de _TOTAL_ registros",
+ 		"sInfoEmpty": "Mostrando de 0 a 0 de 0 registros",
+ 		"sInfoFiltered": "",
+ 		"sInfoPostFix": "",
+ 		"sSearch": "Buscar:",
+ 		"sUrl": "",
+ 		"oPaginate": {
+ 			"sFirst": "Primeiro",
+ 			"sPrevious": "Anterior",
+ 			"sNext": "Seguinte",
+ 			"sLast": "Último" 
+ 		}
+ 	};
+ }
+```
 * Fonts
 
  - https://datatables.net/manual/styling/bootstrap
