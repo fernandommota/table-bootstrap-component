@@ -47,6 +47,10 @@ A component for CDE tool that render a table with Colvis option and table tools 
  	};
  }
 ```
+
+## Credits
+https://github.com/wmarinho and me ;)
+
 ## Fonts
 
  - https://datatables.net/manual/styling/bootstrap
