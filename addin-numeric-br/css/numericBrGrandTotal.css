@@ -1,0 +1,9 @@
+.numericBr-total td{
+    font-weight: bold;
+    font-size: 100%;   
+} 
+
+.numericBr-grand-total td{
+    font-weight: bold;
+    font-size: 120%;
+} 
