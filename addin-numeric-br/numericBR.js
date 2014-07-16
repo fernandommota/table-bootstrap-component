@@ -4,16 +4,19 @@
     label: "Numeric BR",
     defaults: {
 		decimal: true,
-		textFormat: function(v, st, opt) {		
-			var nStr= v.toFixed(2)+'';
-			x  = nStr.split('.');
-			x1 = x[0];
-			x2 = x.length > 1 ? ',' + x[1] : '';
-			var rgx = /(\d+)(\d{3})/;
-			while (rgx.test(x1)) {
-				x1 = x1.replace(rgx, '$1' + '.' + '$2');
-			}
-			return x1 + (opt.decimal ? x2 : '');		
+		textFormat: function(v, st, opt) {
+			if (v != null){
+				var nStr= v.toFixed(2)+'';
+				x  = nStr.split('.');
+				x1 = x[0];
+				x2 = x.length > 1 ? ',' + x[1] : '';
+				var rgx = /(\d+)(\d{3})/;
+				while (rgx.test(x1)) {
+					x1 = x1.replace(rgx, '$1' + '.' + '$2');
+				}
+				return x1 + (opt.decimal ? x2 : '');	
+			}else
+				return '';				
 		}
     },
     init: function(){
