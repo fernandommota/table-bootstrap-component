@@ -50,17 +50,15 @@
 			<Property>expandContainerObject</Property>			
 		</Model>
 		<Implementation>
-            <Code src="js/table-bootstrap-component.js" />            
+            <Code src="table-bootstrap-component.js" />            
             <Styles>
-	        	<Style version="3" src="css/dataTables.bootstrap.css">Bootstrap Datatable</Style>
-	        	<Style version="1.1.0" src="ColVis/dataTables.colVis.css">Bootstrap Colvis</Style>
-	        	<Style version="1.1.4" src="TableTools/css/TableTools.css">TableTools TableTools</Style>
+				<Style version="2.2.2" src="TableTools/css/dataTables.tableTools.css">TableTools TableTools</Style>
+	        	<Style version="1.1.0" src="ColVis/dataTables.colVis.css">Bootstrap Colvis</Style>	        	
 				<Style version="TRUNK" src="addin-numeric-br/css/numericBrGrandTotal.css">numericBrGrandTotal</Style>
 	      	</Styles>
             <Dependencies>
-		    	<Dependency src="ColVis/dataTables.colVis.js" version="1.1.0">Datatable Exclude Columns</Dependency>
-		    	<Dependency src="TableTools/ZeroClipboard.js" version="1.1.4">Datatable ZeroClipboard</Dependency>
-		    	<Dependency src="TableTools/TableTools.js" version="1.1.4">Datatable TableTools</Dependency>
+				<Dependency src="TableTools/dataTables.tableTools.js" version="2.2.2">TableTools</Dependency>
+		    	<Dependency src="ColVis/dataTables.colVis.js" version="1.1.0">Datatable Exclude Columns</Dependency>	    	
 				<Dependency src="addin-numeric-br/numericBR.js" version="TRUNK">numericBR</Dependency>	
 				<Dependency src="addin-numeric-br/numericBrGrandTotal.js" version="TRUNK">numericBrGrandTotal</Dependency>				
 		    </Dependencies>
